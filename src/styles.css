@@ -1,0 +1,160 @@
+/* =========================================
+   Design System - Color Variables
+   ========================================= */
+:root {
+    --primary-color: #3f51b5;     /* Azul/Indigo para botones y elementos clave */
+    --primary-text: #212121;      /* Negro suave para títulos */
+    --secondary-text: #757575;    /* Gris medio para subtítulos y placeholders */
+    --divider-color: #BDBDBD;     /* Gris claro para bordes y tarjetas visuales */
+    --input-bg-color: #F5F5F5;    /* Gris muy claro para el fondo del buscador */
+    --background-color: #FFFFFF;  /* Blanco puro para el fondo general */
+    --white: #FFFFFF;             /* Blanco para el texto sobre colores oscuros */
+}
+
+/* =========================================
+   Hero Section Layout
+   ========================================= */
+.hero-section {
+    background-color: var(--background-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* =========================================
+   Typography
+   ========================================= */
+.hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--primary-text);
+    margin-bottom: 16px;
+    max-width: 516px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hero-lead {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--secondary-text);
+    margin-bottom: 40px;
+    max-width: 916px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   CTA Form - Pill Style (Reference Based)
+   ========================================= */
+.cta-form {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--input-bg-color);
+    border-radius: 64px; /* Borde redondeado estilo píldora para todo el contenedor */
+    padding: 8px 8px 8px 24px; /* Padding asimétrico: más espacio a la izquierda, pegado a la derecha */
+    width: 100%;
+    max-width: 540px; /* Limita el ancho máximo para mantener la proporción */
+    border: 1px solid var(--divider-color); /* Borde sutil opcional */
+}
+
+.hero-input {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    border: none;
+    background-color: transparent; /* Hereda el color del contenedor */
+    outline: none;
+    flex: 1; /* Ocupa todo el espacio disponible antes del botón */
+    min-width: 0;
+}
+
+.hero-input::placeholder {
+    color: var(--secondary-text);
+}
+
+.hero-button {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px;
+    background-color: var(--primary-color); /* Uso del color primario solicitado */
+    color: var(--white);
+    border: none;
+    border-radius: 40px; /* Borde redondeado interno para que encaje en la píldora */
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.hero-button:hover {
+    opacity: 0.9;
+}
+
+/* =========================================
+   Interactive Coverflow Carousel (Full Width)
+   ========================================= */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 500px; /* Aumentado para acomodar tarjetas más grandes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita scroll horizontal si sobresalen mucho */
+    margin-top: 24px;
+}
+
+.visual-card {
+    position: absolute;
+    width: 320px; /* Tarjetas más grandes */
+    height: 440px; 
+    background-color: var(--divider-color);
+    border-radius: 24px;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease, z-index 0.6s;
+    cursor: pointer;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+/* Posiciones fijas para el efecto 3D */
+.card-active {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+    opacity: 1;
+}
+
+.card-prev-1 {
+    transform: translateX(-100%) scale(0.85); /* 65% de superposición hacia la izquierda */
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.card-next-1 {
+    transform: translateX(100%) scale(0.85); /* 65% de superposición hacia la derecha */
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.card-prev-2 {
+    transform: translateX(-185%) scale(0.7); /* Más al fondo a la izquierda */
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.card-next-2 {      
+    transform: translateX(185%) scale(0.7); /* Más al fondo a la derecha */
+    z-index: 1;
+    opacity: 0.3;
+}
