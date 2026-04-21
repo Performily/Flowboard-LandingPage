@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
     <title>Flowboard</title>
 </head>
-<body>
-<section class="hero-section">
-    <div class="hero-container">
-        <h1 class="hero-title">Todo tu sistema de RRHH en una sola plataforma</h1>
-        
-        <p class="hero-lead">
-            Optimiza la gestión de colaboradores, solicitudes y nómina con una solución diseñada para simplificar procesos y ahorrar tiempo.
-        </p>
 
-        <form class="cta-form">
-            <div class="input-container">
-                <input type="email" placeholder="Correo electrónico corporativo" class="hero-input" required>
-                <button type="submit" class="hero-button">Únete ahora</button>
-            </div>  
-        </form>
-    </div>
-            <div class="carousel-container">
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <span class="logo-text">Flowboard</span>
+            </div>
+
+            <nav class="header-nav">
+                <a href="#hero-section" class="nav-link">Inicio</a>
+                <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="header-cta">
+                <button class="header-button">Únete ahora</button>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section" id="hero-section">
+        <div class="hero-container">
+            <h1 class="hero-title">Todo tu sistema de RRHH en una sola plataforma</h1>
+
+            <p class="hero-lead">
+                Optimiza la gestión de colaboradores, solicitudes y nómina con una solución diseñada para simplificar
+                procesos y ahorrar tiempo.
+            </p>
+
+            <form class="cta-form">
+                <div class="input-container">
+                    <input type="email" placeholder="Correo electrónico corporativo" class="hero-input" required>
+                    <button type="submit" class="hero-button">Únete ahora</button>
+                </div>
+            </form>
+        </div>
+        <div class="carousel-container">
             <div class="visual-card"></div>
             <div class="visual-card"></div>
             <div class="visual-card"></div>
@@ -72,5 +93,7 @@
     </div>
 </footer>
 </body>
+
 <script src="src/script.js"></script>
+
 </html>
