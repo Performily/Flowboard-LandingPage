@@ -559,3 +559,72 @@ body {
         justify-self: center;
     }
 }
+
+/* Sección de Seguridad */
+.security-section {
+    padding: 80px 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.security-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.security-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-text);
+    margin-bottom: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.security-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--secondary-text);
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.security-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.security-row {
+    display: flex;
+    gap: 16px;
+}
+
+.security-card {
+    background-color: var(--divider-color);
+    border-radius: 16px;
+}
+
+.card-large {
+    flex: 1;
+    height: 280px;
+}
+
+.card-small {
+    flex: 0.6;
+    height: 220px;
+}
+
+.card-wide {
+    flex: 1.4;
+    height: 220px;
+}
