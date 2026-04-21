@@ -13,6 +13,17 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.legal-content h3, 
+.legal-content p {
+    font-family: 'Inter', sans-serif;
+}
 /* =========================================
    Hero Section Layout
    ========================================= */
@@ -336,4 +347,49 @@ html {
 
 .header-button:hover {
     background-color: #333;
+}
+
+.legal-section {
+    padding: 64px 0;
+    background-color: var(--background-color);
+}
+
+.legal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.legal-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    color: var(--primary-text);
+    margin-bottom: 8px;
+}
+
+.legal-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--secondary-text);
+    margin-bottom: 48px;
+}
+
+.legal-content {
+    text-align: left; 
+    line-height: 1.6;
+    color: var(--primary-text);
+}
+
+.legal-content h3 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: var(--primary-text);
+}
+
+.legal-content p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--secondary-text);
 }
