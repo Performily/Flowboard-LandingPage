@@ -158,3 +158,57 @@
     z-index: 1;
     opacity: 0.3;
 }
+
+.software-demo-section {
+    padding: 10px 0; 
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.demo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.demo-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px; 
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-text);
+    margin-bottom: 16px; 
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--secondary-text);
+    margin-bottom: 48px; 
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo para la visualización del software */
+    margin: 0 auto;
+}
+
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantiene la proporción estándar de video */
+    background-color: var(--divider-color);
+    border-radius: 24px; /* Bordes redondeados consistentes */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05); /* Sombra suave para profundidad */
+    transition: transform 0.3s ease;
+}
+
+.video-placeholder:hover {
+    transform: translateY(-4px); /* Efecto sutil de interacción */
+}
