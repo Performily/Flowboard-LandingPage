@@ -212,3 +212,60 @@
 .video-placeholder:hover {
     transform: translateY(-4px); /* Efecto sutil de interacción */
 }
+
+.main-footer {
+    background-color: var(--background-color);
+    padding: 32px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid var(--divider-color);
+    margin-bottom: 24px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 32px; 
+}
+
+.footer-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--primary-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
