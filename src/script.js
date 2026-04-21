@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCards();
         });
     });
-
+    // Agrega el evento de scroll
+    window.addEventListener('scroll', () => {
+        document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 10);
+    });
     // Carga inicial
     updateCards();
 });

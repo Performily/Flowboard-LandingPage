@@ -10,7 +10,9 @@
     --background-color: #FFFFFF;  /* Blanco puro para el fondo general */
     --white: #FFFFFF;             /* Blanco para el texto sobre colores oscuros */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* =========================================
    Hero Section Layout
    ========================================= */
@@ -211,4 +213,70 @@
 
 .video-placeholder:hover {
     transform: translateY(-4px); /* Efecto sutil de interacción */
+}
+/* Header-Section */
+.header {
+    width: 100%;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: none;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.header-container {
+    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #444;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #111;
+}
+
+.header-button {
+    padding: 10px 20px;
+    background-color: #303f9f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.header-button:hover {
+    background-color: #333;
 }
