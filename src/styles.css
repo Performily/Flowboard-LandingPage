@@ -200,6 +200,7 @@ body {
 
 .software-demo-section {
     scroll-margin-top: 80px;
+    padding: 80px 0;
     background-color: var(--background-color);
     text-align: center;
 }
@@ -423,6 +424,7 @@ body {
 }
 
 .faq-section {
+    padding: 80px 0;
     background-color: var(--background-color);
     text-align: center;
 }
@@ -663,44 +665,38 @@ body {
     margin-right: auto;
 }
 
-.security-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.security-display {
+    position: relative;
     max-width: 800px;
     margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
 }
 
-.security-row {
-    display: flex;
-    gap: 16px;
+.security-image {
+    width: 100%;
+    display: block;
+    border-radius: 24px;
 }
 
-.security-card {
-    background-color: var(--divider-color);
-    border-radius: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.security-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 32px 32px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #303f9f, transparent);
 }
 
-.security-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+.security-overlay-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
 }
 
-.card-large {
-    flex: 1;
-    height: 280px;
-}
-
-.card-small {
-    flex: 0.6;
-    height: 220px;
-}
-
-.card-wide {
-    flex: 1.4;
-    height: 220px;
-}
 
 .features-section {
     padding: 80px 0;
@@ -848,4 +844,9 @@ body {
     color: var(--white);
     border-color: transparent;
     box-shadow: 0 6px 20px rgba(63, 81, 181, 0.4);
+}
+.demo-gif {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
