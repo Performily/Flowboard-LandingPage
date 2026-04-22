@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <link rel="icon" type="image/png" href="src/assets/Head-favicon/Header-icon.png">
     <title>Flowboard</title>
 </head>
 
@@ -19,7 +20,7 @@
                 <a href="#hero-section" class="nav-link">Inicio</a>
                 <a href="#funcionalidades-section" class="nav-link">Funcionalidades</a>
                 <a href="#nosotros" class="nav-link">Nosotros</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="#Contacto" class="nav-link">Contacto</a>
             </nav>
 
             <div class="header-cta">
@@ -44,11 +45,16 @@
             </form>
         </div>
         <div class="carousel-container">
-            <div class="visual-card"></div>
-            <div class="visual-card"></div>
-            <div class="visual-card"></div>
-            <div class="visual-card"></div>
-            <div class="visual-card"></div>
+            <div class="visual-card"><img src="src/assets/Hero-Section-Images/Hero-Section-Image1.png"
+                    alt="Flowboard Dashboard" class="card-image"></div>
+            <div class="visual-card"><img src="src/assets/Hero-Section-Images/Hero-Section-Image2.png"
+                    alt="Flowboard Dashboard" class="card-image"></div>
+            <div class="visual-card"><img src="src/assets/Hero-Section-Images/Hero-Section-Image3.png"
+                    alt="Flowboard Dashboard" class="card-image"></div>
+            <div class="visual-card"><img src="src/assets/Hero-Section-Images/Hero-Section-Image4.png"
+                    alt="Flowboard Dashboard" class="card-image"></div>
+            <div class="visual-card"><img src="src/assets/Hero-Section-Images/Hero-Section-Image5.png"
+                    alt="Flowboard Dashboard" class="card-image"></div>
         </div>
     </section>
     <section class="software-demo-section" id="funcionalidades-section">
@@ -66,79 +72,90 @@
         </div>
     </section>
 
-<section class="security-section" id="security">
-    <div class="security-container">
-        <h2 class="security-title">Seguridad integral en cada acceso y en cada proceso del sistema</h2>
-        <p class="security-subtitle">Garantizamos la seguridad de los datos mediante autenticación segura, control de accesos por rol y protección de la información en todo momento.</p>
+    <section class="security-section" id="security">
+        <div class="security-container">
+            <h2 class="security-title">Seguridad integral en cada acceso y en cada proceso del sistema</h2>
+            <p class="security-subtitle">Garantizamos la seguridad de los datos mediante autenticación segura, control
+                de accesos por rol y protección de la información en todo momento.</p>
 
-        <div class="security-grid">
-            <div class="security-row">
-                <div class="security-card card-large"></div>
-                <div class="security-card card-large"></div>
-            </div>
-            <div class="security-row">
-                <div class="security-card card-small"></div>
-                <div class="security-card card-wide"></div>
+            <div class="security-grid">
+                <div class="security-row">
+                    <div class="security-card card-large"></div>
+                    <div class="security-card card-large"></div>
+                </div>
+                <div class="security-row">
+                    <div class="security-card card-small"></div>
+                    <div class="security-card card-wide"></div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="features-section" id="funcionalidades">
-    <div class="features-container">
-        <h2 class="features-title">Descubre nuestras funcionalidades</h2>
-        <p class="features-subtitle">Administra colaboradores, gestiona solicitudes, controla asistencia y accede a información clave en una plataforma centralizada, pensada para mejorar la eficiencia de tu organización.</p>
+    <section class="features-section" id="funcionalidades">
+        <div class="features-container">
+            <h2 class="features-title">Descubre nuestras funcionalidades</h2>
+            <p class="features-subtitle">Administra colaboradores, gestiona solicitudes, controla asistencia y accede a
+                información clave en una plataforma centralizada, pensada para mejorar la eficiencia de tu organización.
+            </p>
 
-        <div class="features-layout">
-            <div class="features-list">
-                <button class="feature-pill">Funcionalidad 1 <span class="pill-arrow">→</span></button>
-                <button class="feature-pill">Funcionalidad 2 <span class="pill-arrow">→</span></button>
-                <button class="feature-pill">Funcionalidad 3 <span class="pill-arrow">→</span></button>
-                <button class="feature-pill">Funcionalidad 4 <span class="pill-arrow">→</span></button>
-                <button class="feature-pill">Funcionalidad 5 <span class="pill-arrow">→</span></button>
-                <button class="feature-pill">Funcionalidad 6 <span class="pill-arrow">→</span></button>
+            <div class="features-layout">
+                <div class="features-list">
+                    <button class="feature-pill" onclick="selectFeature(this, 0)">Información Laboral <span
+                            class="pill-arrow">→</span></button>
+                    <button class="feature-pill" onclick="selectFeature(this, 1)">Solicitudes <span
+                            class="pill-arrow">→</span></button>
+                    <button class="feature-pill" onclick="selectFeature(this, 2)">Asistencia <span
+                            class="pill-arrow">→</span></button>
+                    <button class="feature-pill" onclick="selectFeature(this, 3)">Gestión <span
+                            class="pill-arrow">→</span></button>
+                    <button class="feature-pill" onclick="selectFeature(this, 4)">Pagos <span
+                            class="pill-arrow">→</span></button>
+                </div>
+
+                <div class="features-display">
+                    <img src="src/assets/Features-Section-Images/Features-Section-Image1.png" alt="Flowboard Dashboard"
+                        class="card-image features-image">
+                    <p class="features-desc-text">Todo lo que necesitas para gestionar tu equipo de forma eficiente, organizado en una sola plataforma.</p>
+                </div>
             </div>
-
-            <div class="features-display"></div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section id="nosotros" class="team-section">
-    <div class="team-container">
-        <h2 class="team-title">El equipo que impulsa la innovación en RRHH</h2>
-        
-        <p class="team-subtitle">
-            Trabajamos en el desarrollo de soluciones digitales que simplifican procesos y mejoran la gestión interna de las organizaciones.
-        </p>
+        <div class="team-container">
+            <h2 class="team-title">El equipo que impulsa la innovación en RRHH</h2>
 
-        <div class="team-grid">
-            
-            <div class="team-member">
-                <img src="src/assets/team/diego_diaz.png" alt="Diego Díaz" class="member-photo">
+            <p class="team-subtitle">
+                Trabajamos en el desarrollo de soluciones digitales que simplifican procesos y mejoran la gestión
+                interna de las organizaciones.
+            </p>
+
+            <div class="team-grid">
+
+                <div class="team-member">
+                    <img src="src/assets/team/diego_diaz.png" alt="Diego Díaz" class="member-photo">
+                </div>
+
+                <div class="team-member">
+                    <img src="src/assets/team/oscar_vasquez.png" alt="Oscar Vasquez" class="member-photo">
+                </div>
+
+                <div class="team-member">
+                    <img src="src/assets/team/dario_avila.png" alt="Dario Avila" class="member-photo">
+                </div>
+
+                <div class="team-member">
+                    <img src="src/assets/team/salym_galvez.png" alt="Salym Galvez" class="member-photo">
+                </div>
+
+                <div class="team-member">
+                    <img src="src/assets/team/josue_carpio.png" alt="Josué Carpio" class="member-photo">
+                </div>
+
             </div>
-
-            <div class="team-member">
-                <img src="src/assets/team/oscar_vasquez.png" alt="Oscar Vasquez" class="member-photo">
-            </div>
-
-            <div class="team-member">
-                <img src="src/assets/team/dario_avila.png" alt="Dario Avila" class="member-photo">
-            </div>
-
-            <div class="team-member">
-                <img src="src/assets/team/salym_galvez.png" alt="Salym Galvez" class="member-photo">
-            </div>
-
-            <div class="team-member">
-                <img src="src/assets/team/josue_carpio.png" alt="Josué Carpio" class="member-photo">
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-    <section class="faq-section">
+    <section class="faq-section" id="Contacto">
         <div class="faq-container">
             <h2 class="faq-title">Resuelve tus dudas sobre el sistema de forma rápida y sencilla</h2>
             <p class="faq-subtitle">Accede a una sección de preguntas frecuentes donde encontrarás respuestas claras
@@ -146,55 +163,71 @@
 
             <div class="faq-list">
                 <div class="faq-item">
-                <p class="faq-question">¿Qué es un software de gestión empresarial?</p>
-                <p class="faq-answer">Es una solución tecnológica diseñada para digitalizar y centralizar todas las interacciones, tareas y flujos de trabajo entre los colaboradores de una empresa. Su objetivo principal es transformar procesos manuales en flujos digitales eficientes, permitiendo que cada área de la organización esté conectada en un mismo entorno.</p>
+                    <p class="faq-question">¿Qué es un software de gestión empresarial?</p>
+                    <p class="faq-answer">Es una solución tecnológica diseñada para digitalizar y centralizar todas las
+                        interacciones, tareas y flujos de trabajo entre los colaboradores de una empresa. Su objetivo
+                        principal es transformar procesos manuales en flujos digitales eficientes, permitiendo que cada
+                        área de la organización esté conectada en un mismo entorno.</p>
                 </div>
-            <hr class="faq-divider">
-            <div class="faq-item">
-                <p class="faq-question">¿Qué hace el software de Flowboard?</p>
-                <p class="faq-answer">Flowboard es un ecosistema integral altamente personalizable que se adapta a las necesidades específicas de cada organización. Ofrece un conjunto robusto de funcionalidades diseñadas especialmente para que las pequeñas y medianas empresas puedan gestionar su talento y operaciones con herramientas de nivel corporativo.</p>
-            </div>
-        <hr class="faq-divider">
+                <hr class="faq-divider">
+                <div class="faq-item">
+                    <p class="faq-question">¿Qué hace el software de Flowboard?</p>
+                    <p class="faq-answer">Flowboard es un ecosistema integral altamente personalizable que se adapta a
+                        las necesidades específicas de cada organización. Ofrece un conjunto robusto de funcionalidades
+                        diseñadas especialmente para que las pequeñas y medianas empresas puedan gestionar su talento y
+                        operaciones con herramientas de nivel corporativo.</p>
+                </div>
+                <hr class="faq-divider">
 
-            <div class="faq-item">
-                <p class="faq-question">¿Para qué sirve un software de gestión empresarial?</p>
-                <p class="faq-answer">Su propósito es impulsar la productividad mediante la automatización de tareas repetitivas y la centralización de la información en tiempo real. Esto facilita una toma de decisiones estratégica basada en datos precisos, agiliza los procesos internos y permite que el equipo se enfoque en lo que realmente importa: el crecimiento del negocio.</p>
-            </div>
-            <hr class="faq-divider">
+                <div class="faq-item">
+                    <p class="faq-question">¿Para qué sirve un software de gestión empresarial?</p>
+                    <p class="faq-answer">Su propósito es impulsar la productividad mediante la automatización de tareas
+                        repetitivas y la centralización de la información en tiempo real. Esto facilita una toma de
+                        decisiones estratégica basada en datos precisos, agiliza los procesos internos y permite que el
+                        equipo se enfoque en lo que realmente importa: el crecimiento del negocio.</p>
+                </div>
+                <hr class="faq-divider">
 
-            <div class="faq-item">
-                <p class="faq-question">¿Qué tareas puedo automatizar con Flowboard?</p>
-                <p class="faq-answer">Con Flowboard, puedes transformar la operatividad diaria mediante la automatización del envío de solicitudes y la interacción constante entre colaboradores, estableciendo un canal de comunicación directo y eficiente con el departamento de RRHH. La plataforma integra la recuperación automática de datos de asistencia para optimizar la gestión del personal, facilita el procesamiento instantáneo para aceptar o declinar solicitudes recurrentes y asegura un control financiero y administrativo riguroso mediante el envío de notificaciones automáticas cuando se detectan pagos pendientes o incumplimientos en fechas específicas.</p>
+                <div class="faq-item">
+                    <p class="faq-question">¿Qué tareas puedo automatizar con Flowboard?</p>
+                    <p class="faq-answer">Con Flowboard, puedes transformar la operatividad diaria mediante la
+                        automatización del envío de solicitudes y la interacción constante entre colaboradores,
+                        estableciendo un canal de comunicación directo y eficiente con el departamento de RRHH. La
+                        plataforma integra la recuperación automática de datos de asistencia para optimizar la gestión
+                        del personal, facilita el procesamiento instantáneo para aceptar o declinar solicitudes
+                        recurrentes y asegura un control financiero y administrativo riguroso mediante el envío de
+                        notificaciones automáticas cuando se detectan pagos pendientes o incumplimientos en fechas
+                        específicas.</p>
+                </div>
             </div>
-</div>
         </div>
     </section>
 
     <footer class="main-footer">
         <div class="footer-container">
             <hr class="footer-divider">
-                <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="privacy.html" class="footer-link">Privacidad</a>
-                        <a href="terms.html" class="footer-link">Términos y condiciones</a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="privacy.html" class="footer-link">Privacidad</a>
+                    <a href="terms.html" class="footer-link">Términos y condiciones</a>
+                </div>
 
-                    <div class="footer-socials">
-                        <a href="#" class="social-icon">
-                            <img src="src/assets/icons/tiktok-icon.png" alt="TikTok">
-                        </a>
-                        <a href="#" class="social-icon">
-                            <img src="src/assets/icons/instagram-icon.png" alt="Instagram">
-                        </a>
-                        <a href="#" class="social-icon">
-                            <img src="src/assets/icons/x-icon.png" alt="X">
-                        </a>
-                        <a href="#" class="social-icon">
-                            <img src="src/assets/icons/youtube-icon.png" alt="YouTube">
-                        </a>
-                    </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="src/assets/icons/tiktok-icon.png" alt="TikTok">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="src/assets/icons/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="src/assets/icons/x-icon.png" alt="X">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="src/assets/icons/youtube-icon.png" alt="YouTube">
+                    </a>
                 </div>
             </div>
+        </div>
     </footer>
 </body>
 

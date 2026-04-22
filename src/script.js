@@ -54,3 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+const featureTexts = [
+    'Consulta y gestiona tus datos personales y laborales de forma rápida y segura en un solo lugar.',
+    'Crea, gestiona y realiza el seguimiento de tus solicitudes de manera simple y organizada.',
+    'Visualiza y controla tus registros de asistencia, horarios y justificaciones fácilmente. descriptivo de Asistencia.',
+    'Administra la información de colaboradores y optimiza los procesos internos de Recursos Humanos.',
+    'Accede a tus boletas y consulta tu información de pagos de forma clara y ordenada.'
+];
+
+function selectFeature(button, index) {
+    document.querySelectorAll('.feature-pill').forEach(p => p.classList.remove('active'));
+    button.classList.add('active');
+    document.querySelector('.features-desc-text').textContent = featureTexts[index];
+}
