@@ -468,6 +468,45 @@ body {
     text-align: left;
     width: 100%;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    color: var(--divider-color);
+}
+
+.faq-item.active .faq-question {
+    color: var(--primary-color);
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(45deg);
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--secondary-text);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, margin-top 0.3s ease;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 16px;
 }
 
 .faq-divider {
@@ -478,9 +517,7 @@ body {
 
 .faq-question:hover {
     color: #303f9f;
-    transition: color 0.2s ease;
 }
-
 .team-section {
     padding: 80px 0;
     background-color: var(--background-color);
@@ -720,7 +757,7 @@ body {
     color: var(--white);
     border-color: transparent;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(63, 81, 181, 0.4);
+    box-shadow: 0 6px 20px rgba(63,     81, 181, 0.4);
 }
 
 .pill-arrow {
