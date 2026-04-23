@@ -62,8 +62,22 @@ const featureTexts = [
     'Accede a tus boletas y consulta tu información de pagos de forma clara y ordenada.'
 ];
 
-function selectFeature(button, index) {
-    document.querySelectorAll('.feature-pill').forEach(p => p.classList.remove('active'));
-    button.classList.add('active');
-    document.querySelector('.features-desc-text').textContent = featureTexts[index];
+const subForm = document.getElementById('subscription-form');
+const banner = document.getElementById('notification-banner');
+const bannerText = document.getElementById('notification-text');
+
+if (subForm) {
+    subForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+
+        bannerText.textContent = "¡Éxito! Tu suscripción a Flowboard ha sido creada.";
+        banner.classList.add('show');
+
+        subForm.reset();
+
+        setTimeout(() => {
+            banner.classList.remove('show');
+        }, 4000);
+    });
 }

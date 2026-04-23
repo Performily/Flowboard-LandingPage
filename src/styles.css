@@ -70,6 +70,33 @@ body {
     justify-content: center;
 }
 
+.notification-banner {
+    position: fixed;
+    top: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 300px;
+    background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%); 
+    color: white;
+    padding: 16px 32px;
+    border-radius: 0 0 16px 16px; 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1000; 
+    transition: top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.notification-banner.show {
+    top: 0; 
+}
+
+.notification-banner.error {
+    background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);
+}
+
 .input-container {
     display: flex;
     align-items: center;

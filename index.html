@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div id="notification-banner" class="notification-banner">
+        <span id="notification-text"></span>
+    </div>
     <header class="header">
         <div class="header-container">
             <div class="header-logo">
@@ -37,12 +40,13 @@
                 procesos y ahorrar tiempo.
             </p>
 
-            <form class="cta-form">
-                <div class="input-container">
-                    <input type="email" placeholder="Correo electrónico corporativo" class="hero-input" required>
-                    <button type="submit" class="hero-button">Únete ahora</button>
-                </div>
-            </form>
+        <form class="cta-form" id="subscription-form">
+            <div class="input-container">
+                <input type="email" placeholder="Correo electrónico corporativo" class="hero-input" required>
+                <button type="submit" class="hero-button">Únete ahora</button>
+            </div>
+            <p id="form-message" class="form-message"></p>
+        </form>
         </div>
         <div class="carousel-container">
             <div class="visual-card"><img src="src/assets/Hero-Section-Images/Hero-Section-Image1.png"
